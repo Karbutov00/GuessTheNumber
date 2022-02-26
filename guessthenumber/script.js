@@ -37,6 +37,8 @@ document.querySelector('.check').addEventListener('click', function () {
     } else {
       document.querySelector('.message').textContent = 'You Lost the Game!';
       document.querySelector('.score').textContent = 0;
+      document.querySelector('body').style.backgroundColor = 'darkred';
+      document.querySelector('h1').textContent = 'LOST!';
     }
     // when guess is less than the secret number
   } else if (guess < secretNumber) {
@@ -49,6 +51,8 @@ document.querySelector('.check').addEventListener('click', function () {
     } else {
       document.querySelector('.message').textContent = 'You Lost the Game!';
       document.querySelector('.score').textContent = 0;
+      document.querySelector('body').style.backgroundColor = 'darkred';
+      document.querySelector('h1').textContent = 'LOST!';
     }
   }
 });
